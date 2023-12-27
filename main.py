@@ -3,8 +3,8 @@ import requests
 from datetime import datetime
 import time
 
-MY_EMAIL = "jccreis@gmail.com"
-MY_PASSWORD = "BVF00602500"
+MY_EMAIL = "e-mail adress"
+MY_PASSWORD = "e-mail password"
 MY_LAT = 41.278622 # Your latitude
 MY_LONG = -8.378610 # Your longitude
 
@@ -37,7 +37,7 @@ def is_night():
 
     time_now = datetime.now()
 
-    if time_now >= sunrise or time_now <= sunrise:
+    if time_now >= sunset or time_now <= sunrise:
         return True
 
 while True:
